@@ -15,5 +15,30 @@ This is a RESTful API for managing books, built with Spring Boot and containeriz
 
 ## Build the Docker Image
 
+To build the Docker image for this application, run the following command in the root directory of the project:
+
 ```bash
 docker build -t restful-book-management .
+```
+
+## Run the Application
+
+To run the application in a Docker container, use the following command:
+
+```bash
+docker run -p 8080:8080 restful-book-management
+```
+
+## Access the Application
+
+The API will be available at `http://localhost:8080/api/books`.
+
+- Use this endpoint to retrieve all books, add new ones, update, or delete existing books.
+
+## Available Endpoints
+- `GET /api/books` - Retrieve all books
+- `POST /api/books` - Add a new book
+- `PUT /api/books/{id}` - Update a book
+- `DELETE /api/books/{id}` - Delete a book
+```
+
