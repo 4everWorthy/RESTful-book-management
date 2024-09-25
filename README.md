@@ -9,3 +9,11 @@ By the time I got to the **service** and **controller**, I already had a solid f
 
 ---
 
+# RESTful Book Management API
+
+This is a RESTful API for managing books, built with Spring Boot and containerized with Docker.
+
+## Build the Docker Image
+
+```bash
+docker build -t restful-book-management .
